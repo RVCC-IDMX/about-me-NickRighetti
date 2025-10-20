@@ -1,8 +1,8 @@
 /* CSS Styling */
 body {
   font-family: 'Open Sans', sans-serif;
-  background: linear-gradient(to right, #f0f4f8, #d9e2ec); /* light gradient background */
-  color: #222; /* dark text */
+  background: linear-gradient(to right, #f7f2e9, #e4d9c6);
+  color: #222;
   margin: 0;
   padding: 0;
 }
@@ -39,6 +39,8 @@ main section:first-of-type {
 
 main section:first-of-type img {
   width: 130px;
+  height: 130px;
+  object-fit: cover;
   border-radius: 50%;
   border: 4px solid white;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
