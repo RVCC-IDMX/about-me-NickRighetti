@@ -141,4 +141,23 @@ article p {
   line-height: 1.9;
   font-size: 1rem;
   color: #333;
+
+}
+/* Outline all elements to inspect spacing */
+* {
+  outline: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Center the Hobbies section */
+#hobbies {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 20px;
+}
+
+/* Adjust h2 margins */
+#hobbies h2 {
+  margin-top: 10px;
+  margin-bottom: 10px;
 }
