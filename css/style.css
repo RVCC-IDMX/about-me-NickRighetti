@@ -92,11 +92,10 @@ section h2 {
 }
 
 section figure {
-  display: inline-block;
-  margin: 1rem;
+  display: block;
+  margin: 1rem auto;
   text-align: center;
-  width: 30%;
-  vertical-align: top;
+  max-width: 500px;
 }
 
 section figure img {
@@ -161,3 +160,34 @@ article p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
+
+@media screen and (min-width: 60em) {
+  section figure {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+    align-items: center;
+    gap: 1rem;
+    max-width: 700px;
+    margin: 2rem auto;
+  }
+
+  section figure img {
+    width: 100%;
+    height: auto;
+    object-fit: cover;
+  }
+
+  section figcaption {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5rem;
+    margin-left: 1rem;
+  }
+}
+
+
+
+
+
+
