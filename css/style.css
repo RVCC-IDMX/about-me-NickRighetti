@@ -169,7 +169,7 @@ article p {
     gap: 1rem;
     max-width: 700px;
     margin: 2rem auto;
-  }
+}
 
   section figure img {
     width: 100%;
@@ -186,8 +186,19 @@ article p {
   }
 }
 
+#lit {
+  max-width:100%;
+  columns: 40rem;
+  column-gap: 2rem;
+}
 
-
+#lit p::first-letter {
+  font-size: 3.5rem;
+  font-weight: bold;
+  float: left;
+  line-height: 1;
+  padding-right: 0.5rem;
+}
 
 
 
