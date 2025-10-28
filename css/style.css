@@ -200,5 +200,48 @@ article p {
   padding-right: 0.5rem;
 }
 
+@media screen and (min-width: 100em) {
+  /* Turn #gallery into a 3-column grid */
+  #gallery {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 2rem;
+    max-width: 1200px;
+    margin: 3rem auto;
+  }
+
+  /* Span the h2 across all columns */
+  #gallery h2 {
+    grid-column: 1 / -1;
+    text-align: center;
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+  }
+
+  /* Remove horizontal rule if it breaks layout */
+  #gallery hr {
+    display: none;
+  }
+
+  /* Reset figure layout to block for clean stacking */
+  #gallery figure {
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  #gallery figure img {
+    width: 100%;
+    max-width: 350px;
+    height: auto;
+    object-fit: cover;
+    margin-bottom: 0.5rem;
+  }
+
+  #gallery figcaption {
+    font-size: 1rem;
+    color: #555;
+  }
+}
 
 
