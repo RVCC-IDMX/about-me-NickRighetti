@@ -77,6 +77,63 @@
     <p class="video-caption"> A quick look at how I created my personal training website.</p>
     </div>
   </section>
+  <section id="contact">
+  <h2>Contact Me</h2>
+
+  <form method="post" data-netlify="true">
+
+    <fieldset>
+      <legend>Contact Form</legend>
+
+      <!-- Name -->
+      <label for="name">Name (required)</label>
+      <input type="text" id="name" name="name" required>
+
+      <!-- Email -->
+      <label for="email">Email (required)</label>
+      <input type="email" id="email" name="email" required>
+
+      <!-- Phone -->
+      <label for="phone">Phone (optional)</label>
+      <input type="tel" id="phone" name="phone">
+
+      <!-- Phone Type -->
+      <label for="phone-type">Phone Type (optional)</label>
+      <select id="phone-type" name="phone-type">
+        <option value="">-- Select Type --</option>
+        <option value="mobile">Mobile</option>
+        <option value="home">Home</option>
+        <option value="work">Work</option>
+      </select>
+
+      <!-- Message -->
+      <label for="message">Message</label>
+      <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+      <!-- Follow-up -->
+      <p>Would you like a follow-up?</p>
+      <ul class="followup-list">
+        <li>
+          <label>
+            <input type="radio" name="followup" value="yes">
+            Yes
+          </label>
+        </li>
+        <li>
+          <label>
+            <input type="radio" name="followup" value="no">
+            No
+          </label>
+        </li>
+      </ul>
+
+      <!-- Submit -->
+      <button type="submit">Submit</button>
+    </fieldset>
+
+  </form>
+</section>
+
     </main>
     <p>Now on Netlify!</p>
     <footer>
