@@ -164,111 +164,146 @@ article p {
   margin-top: 10px;
   margin-bottom: 10px;
 }
-/* CONTACT FORM SECTION */
+/* CONTACT FORM SECTION — UPDATED */
 #contact {
-  max-width: 800px;
-  margin: 2rem auto;
-  background: #ffffff;
-  padding: 2rem;
-  border-radius: 10px;
-  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  max-width: 900px;
+  margin: 3rem auto;
+  background: #fefefe;
+  padding: 2.5rem 2rem;
+  border-radius: 15px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.12);
   font-family: 'Open Sans', sans-serif;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+#contact:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 12px 24px rgba(0,0,0,0.18);
 }
 
 #contact h2 {
   text-align: center;
   color: #004aad;
   font-family: 'Poppins', sans-serif;
-  margin-bottom: 1.5rem;
+  font-size: 2rem;
+  margin-bottom: 2rem;
 }
 
 /* FIELDSET */
 #contact fieldset {
   border: 2px solid #004aad;
-  padding: 1.5rem;
-  border-radius: 10px;
+  padding: 2rem;
+  border-radius: 12px;
   background: #f0f7ff;
 }
 
 #contact legend {
   font-weight: bold;
   font-family: 'Poppins', sans-serif;
-  padding: 0 8px;
+  padding: 0 10px;
   color: #004aad;
+  font-size: 1.1rem;
 }
 
-/* INPUTS */
+/* LABELS */
 #contact label {
   display: block;
-  margin-top: 1rem;
+  margin-top: 1.2rem;
   font-weight: 600;
+  color: #222;
 }
 
+/* INPUTS & TEXTAREAS */
 #contact input,
 #contact select,
 #contact textarea {
   width: 100%;
-  padding: 10px;
-  margin-top: 5px;
+  padding: 12px;
+  margin-top: 6px;
   font-size: 1rem;
-  border-radius: 8px;
-  border: 1px solid #aaa;
+  border-radius: 10px;
+  border: 1px solid #ccc;
   font-family: inherit;
+  transition: border 0.3s ease, box-shadow 0.3s ease;
 }
 
-/* FOLLOW-UP RADIO LIST */
+#contact input:focus,
+#contact select:focus,
+#contact textarea:focus {
+  border-color: #004aad;
+  box-shadow: 0 0 6px rgba(0,74,173,0.3);
+  outline: none;
+}
+
+/* RADIO BUTTONS — YES/NO IMPROVED */
 .followup-list {
   list-style: none;
   padding: 0;
   margin: 1rem 0;
+  display: flex;
+  gap: 2rem;
+  justify-content: center;
 }
 
 .followup-list li {
-  margin-bottom: 8px;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
 }
 
-/* BUTTON */
+.followup-list input[type="radio"] {
+  width: 18px;
+  height: 18px;
+  accent-color: #004aad;
+  cursor: pointer;
+}
+
+.followup-list label {
+  cursor: pointer;
+  font-weight: 500;
+  color: #222;
+}
+
+/* SUBMIT BUTTON */
 #contact button {
   display: block;
   width: 100%;
-  padding: 12px;
-  margin-top: 1.5rem;
+  padding: 14px;
+  margin-top: 2rem;
   border: none;
-  border-radius: 8px;
-  background: #004aad;
+  border-radius: 10px;
+  background: linear-gradient(135deg, #004aad, #023e8a);
   color: white;
   font-size: 1.2rem;
   font-family: 'Poppins', sans-serif;
   cursor: pointer;
-  transition: background 0.3s ease;
+  transition: background 0.3s ease, transform 0.2s ease;
 }
 
 #contact button:hover {
-  background: #023e8a;
+  background: linear-gradient(135deg, #023e8a, #004aad);
+  transform: translateY(-2px);
 }
 
-/* RESPONSIVE UPGRADES FOR TABLET */
+/* RESPONSIVE ENHANCEMENTS */
 @media screen and (min-width: 40em) {
   #contact fieldset {
-    padding: 2rem;
+    padding: 2.5rem;
   }
 }
 
-/* LARGER SCREEN LAYOUT */
 @media screen and (min-width: 60em) {
-  #contact {
-    max-width: 900px;
-  }
-
   #contact input,
   #contact select {
-    max-width: 60%;
+    max-width: 65%;
   }
 
   #contact textarea {
-    max-width: 80%;
+    max-width: 85%;
   }
 }
+
 /* TABLET BREAKPOINT 60em / 960 px */
  /* Use grid layout for gallery figures */
 @media screen and (min-width: 60em) {
