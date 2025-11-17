@@ -144,6 +144,7 @@ article p {
   color: #333;
 
 }
+
 /* DEBUGGING TOOL */
 /* Outline all elements to inspect spacing */
 /* * {
@@ -162,6 +163,111 @@ article p {
 #hobbies h2 {
   margin-top: 10px;
   margin-bottom: 10px;
+}
+/* CONTACT FORM SECTION */
+#contact {
+  max-width: 800px;
+  margin: 2rem auto;
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 10px;
+  box-shadow: 0 6px 12px rgba(0,0,0,0.05);
+  font-family: 'Open Sans', sans-serif;
+}
+
+#contact h2 {
+  text-align: center;
+  color: #004aad;
+  font-family: 'Poppins', sans-serif;
+  margin-bottom: 1.5rem;
+}
+
+/* FIELDSET */
+#contact fieldset {
+  border: 2px solid #004aad;
+  padding: 1.5rem;
+  border-radius: 10px;
+  background: #f0f7ff;
+}
+
+#contact legend {
+  font-weight: bold;
+  font-family: 'Poppins', sans-serif;
+  padding: 0 8px;
+  color: #004aad;
+}
+
+/* INPUTS */
+#contact label {
+  display: block;
+  margin-top: 1rem;
+  font-weight: 600;
+}
+
+#contact input,
+#contact select,
+#contact textarea {
+  width: 100%;
+  padding: 10px;
+  margin-top: 5px;
+  font-size: 1rem;
+  border-radius: 8px;
+  border: 1px solid #aaa;
+  font-family: inherit;
+}
+
+/* FOLLOW-UP RADIO LIST */
+.followup-list {
+  list-style: none;
+  padding: 0;
+  margin: 1rem 0;
+}
+
+.followup-list li {
+  margin-bottom: 8px;
+}
+
+/* BUTTON */
+#contact button {
+  display: block;
+  width: 100%;
+  padding: 12px;
+  margin-top: 1.5rem;
+  border: none;
+  border-radius: 8px;
+  background: #004aad;
+  color: white;
+  font-size: 1.2rem;
+  font-family: 'Poppins', sans-serif;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+#contact button:hover {
+  background: #023e8a;
+}
+
+/* RESPONSIVE UPGRADES FOR TABLET */
+@media screen and (min-width: 40em) {
+  #contact fieldset {
+    padding: 2rem;
+  }
+}
+
+/* LARGER SCREEN LAYOUT */
+@media screen and (min-width: 60em) {
+  #contact {
+    max-width: 900px;
+  }
+
+  #contact input,
+  #contact select {
+    max-width: 60%;
+  }
+
+  #contact textarea {
+    max-width: 80%;
+  }
 }
 /* TABLET BREAKPOINT 60em / 960 px */
  /* Use grid layout for gallery figures */
