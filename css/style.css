@@ -434,3 +434,36 @@ article p {
   font-size: 1rem;
 }
 /* commit  */
+
+/* MOBILE FIX — for screens under 600px */
+@media (max-width: 600px) {
+
+  header {
+    flex-direction: column;        /* stack everything vertically */
+    align-items: center;
+    text-align: center;
+    gap: 0.5rem;
+    padding: 1rem;
+  }
+
+  header img {
+    width: 60px;                   /* smaller logo */
+  }
+
+  header h1 {
+    font-size: 1.6rem;
+    line-height: 1.2;
+  }
+
+  nav ul {
+    flex-direction: column;        /* stack the links */
+    gap: 0.25rem;
+    padding: 0;
+    margin: 0;
+  }
+
+  nav ul li a {
+    font-size: 1rem;
+    padding: 0.25rem 0;
+  }
+}
