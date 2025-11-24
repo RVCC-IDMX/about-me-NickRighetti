@@ -78,3 +78,32 @@ header a {
 header a:hover {
     color: #7a5cf3;
 }
+
+/* ==========================
+   MEDIA QUERY: WIDE SCREENS
+   ========================== */
+@media screen and (min-width: 768px) {
+
+    /* navbar spacing on large screens */
+    .navbar {
+        padding: 1rem 3rem;
+    }
+
+    /* navigation list horizontal layout */
+    .navbar-links ul {
+        flex-direction: row;
+        gap: 2rem;
+    }
+
+    .navbar-links a {
+        font-size: 1.1rem;
+    }
+
+    .logo img {
+        height: 65px;
+    }
+
+    .logo h1 {
+        font-size: 1.75rem;
+    }
+}
