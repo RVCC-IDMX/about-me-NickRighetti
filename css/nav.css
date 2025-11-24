@@ -1,4 +1,5 @@
 /* make scrolling smooth */
+/* mobile first! */
 html {
     scroll-behavior: smooth;
 }
