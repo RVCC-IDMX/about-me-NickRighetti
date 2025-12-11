@@ -1,161 +1,263 @@
-<!DOCTYPE html> <!-- did the emmet abbreviation. -->
+<!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>About Me</title>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/nav.css">
-  </head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>About Me — Nick Righetti</title>
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&family=Poppins:wght@600&display=swap" rel="stylesheet">
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="css/nav.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="img/nr-logo.svg" type="image/svg+xml">
+
+  <!-- Meta -->
+  <meta name="description" content="Personal About Me / Portfolio page for Nick Righetti — Web Dev I final project.">
+</head>
+
 <body>
-    <header>
-    <nav class="navbar">
+  <header>
+    <nav class="navbar" aria-label="Main navigation">
+      <div class="logo">
+        <img src="img/nr-logo.svg" alt="Nick Righetti logo" class="logo-img">
+      </div>
 
-        <!-- LOGO SECTION -->
-        <div class="logo">
-            <img src="img/logo-96X96.svg" alt="Blue origami logo">
-            <h1>Web Dev I</h1>
-        </div>
+      <!-- Hamburger -->
+      <button id="nav-toggle" class="nav-toggle" aria-expanded="false" aria-controls="nav-list" aria-label="Open menu">
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+        <span class="hamburger-line"></span>
+      </button>
 
-        <!-- NAV LINKS -->
-        <div class="navbar-links">
-            <ul>
-                <li><a class="nav-links" href="#bio">Bio</a></li>
-                <li><a class="nav-links" href="#gallery">Gallery</a></li>
-                <li><a class="nav-links" href="#lit">Blog</a></li>
-                <li><a class="nav-links" href="#contact">Contact Me</a></li>
-            </ul>
-        </div>
-
+      <div class="navbar-links" id="nav-list">
+        <ul>
+          <li><a class="nav-links" href="#bio">Bio</a></li>
+          <li><a class="nav-links" href="#gallery">Gallery</a></li>
+          <li><a class="nav-links" href="#blog">Blog</a></li>
+          <li><a class="nav-links" href="#video">Video</a></li>
+          <li><a class="nav-links" href="#contact">Contact</a></li>
+        </ul>
+      </div>
     </nav>
-</header>
-<!-- main envelopts important page content and shift tab goes backward -->
-    <main>
-        
-        <section> <!-- hero section shows profile image, name and loc-->
-            <img src="img/avataaars.png" alt ="Avatar of me">
-            <div>
-                <p>Nick Righetti</p>
-                <p>Bridgewater, NJ</p>
+  </header>
 
-            </div>
-        </section> <!-- close hero section -->
+  <main id="content">
 
-        <section id = "bio"> <!-- bio section: personal info (not too personal)-->
-            <div>
-                <p>I want to be...</p>
-                <p>A cybersecurity expert in the future!</p>
-                <p>I love going to the gym and working out.</p>
-                <p>I hope one day to turn that hobby into a sport, Bodybuilding!</p>
-                <p>I also enjoy learning about new technologies and programming languages.</p>
-                <p>In my free time...</p>
-                <p>I am either at the gym, doing homework, working, or spending time with family.</p>
-            </div>
-        </section>
-        <section>
-            <h2>My Hobbies</h2>
-                <ul>
-                    <li>Weightlifting & Bodybuilding</li>
-                    <li>Exploring Cybersecurity Tools</li>
-                    <li>Learning New Programming Languages</li>
-                    <li>Spending time with family</li>
-                    <li>Gaming & Tech Reviews</li>
-                </ul>
-        </section>
-        <section id="gallery">
-            <h2>Photo Gallery</h2>
-                <hr>
-                    <figure>
-                        <img src="img/dumbbell.jpg" alt="My lifting dumbbells">
-                        <figcaption>Dumbbells</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/cable-tower.jpg" alt="Cable machine in my basement.">
-                        <figcaption>Cable Machine</figcaption>
-                    </figure>
-                    <figure>
-                        <img src="img/punching-bag.jpg" alt="Punching bag I use to train.">
-                        <figcaption>Punching Bag</figcaption>
-                    </figure>
-        </section>
-        <article>
-            <h2>Frankenstein by Mary Shelley</h2>
-            <div id="lit">
-                <p>It was on a dreary night of November that I beheld the accomplishment of my toils. With an anxiety that almost amounted to agony, I collected the instruments of life around me, that I might infuse a spark of being into the lifeless thing that lay at my feet. It was already one in the morning; the rain pattered dismally against the panes, and my candle was nearly burnt out.</p>
-                <p>The moon had disappeared from the night, and again, with a lessened form, showed itself, while I still remained in the forest. My sensations had by this time become distinct, and my mind received every day additional ideas. My eyes became accustomed to the light and to perceive objects in their right forms; I distinguished the insect from the herb, and by degrees, one herb from another.</p>
-                <p>I passed the summer thus engaged in my laboratory. The leaves of that year had withered before my work drew near to a close, and now every day showed me more plainly how well I had succeeded. But my enthusiasm was checked by my anxiety, and I appeared rather like one doomed by slavery to toil in the mines, or any other unwholesome trade than an artist occupied by his favourite employment.</p>
-            </div>
-        </article>
-        </section>
-        <section id="video">
-    <h2>A Short Video</h2>
-    <div class="video-wrapper">
-    <iframe width="560" height="315" src="https://www.youtube.com/embed/06lkXQgBOPg?si=81OXxZhS9Q68zBoC" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-    <p class="video-caption"> A quick look at how I created my personal training website.</p>
-    </div>
-  </section>
-  <section id="contact">
-  <h2>Contact Me</h2>
+    <!-- Hero -->
+    <section class="hero" aria-labelledby="hero-heading">
+      <img src="img/avataaars.png" alt="Avatar of Nick Righetti" class="hero-avatar">
+      <div class="hero-text">
+        <h2 id="hero-heading">Nick Righetti</h2>
+        <p class="location">Bridgewater, NJ</p>
+      </div>
+    </section>
 
-  <form method="post" data-netlify="true" name="contact">
-    <input type="hidden" name="form-name" value="contact">
-    <fieldset>
-      <legend>Contact Form</legend>
+    <!-- Bio -->
+    <section id="bio" class="bio">
+      <h2>About Me</h2>
+      <div class="bio-text">
+        <p>I want to be a cybersecurity expert in the future. I’m fascinated by the interactions between systems and people — how secure systems are designed and how attackers think. Over the past few years I’ve built small Python projects, learned Java and basic server-side development, and started exploring penetration testing tools. Gym life is a big part of who I am: I train consistently and enjoy pushing personal records; fitness gives me discipline and focus that I bring to coding and studying. Outside of technical work and the gym, I enjoy playing video games and spending time with family and friends.</p>
 
-      <!-- Name -->
-      <label for="name">Name (required)</label>
-      <input type="text" id="name" name="name" required>
+        <p>When I’m not studying or training, I spend time with family and friends. I'm learning to communicate technical topics more clearly — I enjoy teaching my friends what I learn. My short-term goals include solidifying knowledge of network devices, getting comfortable with common security tooling, and completing an A+ Certification that can help me in getting a IT job to start. Long-term, I aim to work in applied cybersecurity where I can both defend systems and help design more resilient software. My hobbies — coding, fitness, and research — reinforce each other. I’m excited to present this About Me as part of my portfolio to potential employers and collaborators.</p>
+      </div>
+    </section>
 
-      <!-- Email -->
-      <label for="email">Email (required)</label>
-      <input type="email" id="email" name="email" required>
-
-      <!-- Phone -->
-      <label for="phone">Phone (optional)</label>
-      <input type="tel" id="phone" name="phone">
-
-      <!-- Phone Type -->
-      <label for="phone-type">Phone Type (optional)</label>
-      <select id="phone-type" name="phone-type">
-        <option value="">-- Select Type --</option>
-        <option value="mobile">Mobile</option>
-        <option value="home">Home</option>
-        <option value="work">Work</option>
-      </select>
-
-      <!-- Message -->
-      <label for="message">Message</label>
-      <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
-
-      <!-- Follow-up -->
-      <p>Would you like a follow-up?</p>
-      <ul class="followup-list">
-        <li>
-          <label>
-            <input type="radio" name="followup" value="yes">
-            Yes
-          </label>
-        </li>
-        <li>
-          <label>
-            <input type="radio" name="followup" value="no">
-            No
-          </label>
-        </li>
+    <!-- Hobbies -->
+    <section class="hobbies">
+      <h2>My Hobbies</h2>
+      <ul>
+        <li>Weightlifting & Bodybuilding</li>
+        <li>Exploring Cybersecurity Tools</li>
+        <li>Learning New Programming Languages</li>
+        <li>Spending Time with Family</li>
+        <li>Gaming & Tech Reviews</li>
       </ul>
+    </section>
 
-      <!-- Submit -->
-      <button type="submit">Submit</button>
-    </fieldset>
+    <!-- Gallery -->
+    <section id="gallery" class="gallery">
+      <h2>Photo Gallery</h2>
+      <hr>
 
-  </form>
-</section>
+      <div class="gallery-grid">
+        <figure class="gallery-item">
+          <img src="img/dumbbell.jpg" alt="Dumbbells" tabindex="0">
+          <figcaption>Dumbbells</figcaption>
+        </figure>
 
-    </main>
+        <figure class="gallery-item">
+          <img src="img/cable-tower.jpg" alt="Cable machine in basement" tabindex="0">
+          <figcaption>Cable Machine</figcaption>
+        </figure>
+
+        <figure class="gallery-item">
+          <img src="img/punching-bag.jpg" alt="Punching bag for training" tabindex="0">
+          <figcaption>Punching Bag</figcaption>
+        </figure>
+      </div>
+    </section>
+
+    <!-- Blog Article -->
+<article id="blog" class="blog-article">
+  <h2>Image Hover Effects: Techniques and Accessible Practices</h2>
+  <p class="byline">By <strong>Nick Righetti</strong> — December 2025</p>
+
+  <section class="article-body">
+
+    <p>
+      Image hover effects are a small but powerful tool in a web designer’s kit: they give a page interactivity, provide visual feedback that an element is clickable, and can help highlight details without increasing overall page weight. Common techniques include simple scale and transform animations, opacity changes, slide-in captions, CSS masks or clipping for stylized shapes, and creative use of pseudo-elements. Using the <code>:hover</code> pseudo-class with smooth transitions creates polished motion for users with a fine pointer, but it’s equally important to design these effects responsibly so they work well across devices and accessibility settings. Hover should enhance a page, not determine whether a visitor can access important information.
+    </p>
+
+    <p>
+      For example, <code>:hover</code> triggers when a cursor moves across an element on laptops or desktops, but mobile users rely on touch input. Because touch screens don’t support true hovering, designers should avoid relying exclusively on hover effects to show essential captions, controls, or information. If a hover effect reveals something critical, it should also appear on tap, focus, or by default. This ensures the layout remains functional for everyone who interacts with the site.
+    </p>
+
+    <p><strong>Example techniques used in this site’s gallery include:</strong></p>
+
+    <p>
+      <strong>Scale + fade:</strong> the image slightly scales up while a subtle box-shadow gives a sense of depth. This is a lightweight way to signal interactivity.
+    </p>
+
+    <p>
+      <strong>Caption slide:</strong> a caption slides upward from the bottom using <code>transform</code> and <code>opacity</code>. Because the animation relies on transforms, it remains smooth and GPU-accelerated even on low-power devices.
+    </p>
+
+    <p>
+      <strong>Mask / clip effects:</strong> for stylized shapes, <code>mask-image</code> or <code>clip-path</code> allows unique reveals without importing extra graphics. These should be used sparingly, and any text or icons inside the clipped area must maintain strong contrast to remain readable.
+    </p>
+
+    <p>
+      <strong>Accessibility notes:</strong> When building hover animations, it’s a good rule to prefer <code>transform</code> and <code>opacity</code> rather than layout-changing properties such as <code>width</code>, <code>height</code>, or <code>top</code>. Layout changes cause reflow, which is more expensive and may lead to jittery motion on weaker hardware. It’s also important to respect user preferences. Visitors who choose “reduced motion” may experience discomfort or distraction from excessive animation. Using <code>@media (prefers-reduced-motion: reduce)</code> ensures hover effects become static or minimal when required. Additionally, combining <code>@media (hover: hover)</code> and <code>@media (pointer: fine)</code> ensures that effects only appear when a device actually supports them.
+    </p>
+
+    <p>
+      <strong>Keyboard accessibility:</strong> Hover should never be the only way to trigger an effect. By making gallery images focusable, keyboard users can tab through content and receive the same highlight used on hover. This keeps behavior consistent across input types.
+    </p>
+
+    <p>
+      Below is the example CSS snippet used in the project:
+    </p>
+
+    <pre><code>
+.gallery-item img {
+  transition: transform 260ms ease, filter 260ms ease, opacity 260ms ease;
+  will-change: transform, opacity;
+}
+.gallery-item img:hover,
+.gallery-item img:focus {
+  transform: scale(1.04);
+  filter: saturate(1.05);
+  outline: none;
+}
+@media (prefers-reduced-motion: reduce) {
+  .gallery-item img { transition: none; transform: none; }
+}
+    </code></pre>
+
+    <p>
+      Resources that guided this work include MDN’s documentation on <code>:hover</code> and pseudo-classes, CSS-Tricks’ articles on advanced image effects, and Smashing Magazine’s guide on pointer and hover media queries. These helped shape a modern, accessible approach to hover interactions.
+    </p>
+
+  </section>
+
+  <section class="article-refs">
+    <h3>References</h3>
+    <ol>
+      <li>MDN — <em>:hover pseudo-class</em></li>
+      <li>CSS-Tricks — <em>Fancy Image Decorations: Masks and Advanced Hover Effects</em></li>
+      <li>Smashing Magazine — <em>Pointer & Hover Media Queries</em></li>
+    </ol>
+  </section>
+</article>
+
+
+    <!-- Video -->
+    <section id="video">
+      <h2>A Short Video</h2>
+      <div class="video-wrapper">
+        <iframe
+          width="560"
+          height="315"
+          src="https://www.youtube.com/embed/06lkXQgBOPg?si=81OXxZhS9Q68zBoC"
+          title="YouTube video player"
+          allowfullscreen>
+        </iframe>
+        <p class="video-caption">A quick look at how I created my personal training website.</p>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact">
+      <h2>Contact Me</h2>
+
+      <form method="post" data-netlify="true" name="contact" aria-label="Contact form">
+        <input type="hidden" name="form-name" value="contact">
+
+        <fieldset>
+          <legend>Contact Form</legend>
+
+          <label for="name">Name (required)</label>
+          <input type="text" id="name" name="name" required>
+
+          <label for="email">Email (required)</label>
+          <input type="email" id="email" name="email" required>
+
+          <label for="phone">Phone (optional)</label>
+          <input type="tel" id="phone" name="phone">
+
+          <label for="phone-type">Phone Type (optional)</label>
+          <select id="phone-type" name="phone-type">
+            <option value="">-- Select Type --</option>
+            <option value="mobile">Mobile</option>
+            <option value="home">Home</option>
+            <option value="work">Work</option>
+          </select>
+
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Write your message here..."></textarea>
+
+          <p>Would you like a follow-up?</p>
+          <ul class="followup-list">
+            <li><label><input type="radio" name="followup" value="yes"> Yes</label></li>
+            <li><label><input type="radio" name="followup" value="no"> No</label></li>
+          </ul>
+
+          <button type="submit">Submit</button>
+        </fieldset>
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2025 Nick Righetti. All rights reserved. — 
+      <a href="https://github.com/YOUR_USERNAME/YOUR_REPO" target="_blank" rel="noopener">Repo on GitHub</a>
+    </p>
     <p>Now on Netlify!</p>
-    <footer>
-  <p>© 2025 Nick Righetti. All rights reserved.</p>
-    </footer>
+  </footer>
+
+  <!-- Mobile Nav Toggle -->
+  <script>
+    (function () {
+      const btn = document.getElementById('nav-toggle');
+      const nav = document.getElementById('nav-list');
+
+      btn.addEventListener('click', () => {
+        const expanded = btn.getAttribute('aria-expanded') === 'true';
+        btn.setAttribute('aria-expanded', !expanded);
+        nav.classList.toggle('open');
+      });
+
+      document.querySelectorAll('.navbar-links a').forEach(link => {
+        link.addEventListener('click', () => {
+          nav.classList.remove('open');
+          btn.setAttribute('aria-expanded', 'false');
+        });
+      });
+    })();
+  </script>
 </body>
 </html>
