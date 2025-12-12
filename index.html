@@ -60,9 +60,11 @@
     <section id="bio" class="bio">
       <h2>About Me</h2>
       <div class="bio-text">
-        <p>I want to be a cybersecurity expert in the future. I’m fascinated by the interactions between systems and people — how secure systems are designed and how attackers think. Over the past few years I’ve built small Python projects, learned Java and basic server-side development, and started exploring penetration testing tools. Gym life is a big part of who I am: I train consistently and enjoy pushing personal records; fitness gives me discipline and focus that I bring to coding and studying. Outside of technical work and the gym, I enjoy playing video games and spending time with family and friends.</p>
+        <p>I want to be a cybersecurity expert in the future. I'm fascinated by the interactions between systems and people — how secure systems are designed and how attackers think. Over the past few years I've built small Python projects, learned Java and basic server-side development, and started exploring penetration testing tools. Gym life is a big part of who I am: I train consistently and enjoy pushing personal records; fitness gives me discipline and focus that I bring to coding and studying. Outside of technical work and the gym, I enjoy playing video games and spending time with family and friends.</p>
 
-        <p>When I’m not studying or training, I spend time with family and friends. I'm learning to communicate technical topics more clearly — I enjoy teaching my friends what I learn. My short-term goals include solidifying knowledge of network devices, getting comfortable with common security tooling, and completing an A+ Certification that can help me in getting a IT job to start. Long-term, I aim to work in applied cybersecurity where I can both defend systems and help design more resilient software. My hobbies — coding, fitness, and research — reinforce each other. I’m excited to present this About Me as part of my portfolio to potential employers and collaborators.</p>
+        <img src="img/family.jpg" alt="Me and my family" class="bio-image">
+
+        <p>When I'm not studying or training, I spend time with family and friends. I'm learning to communicate technical topics more clearly — I enjoy teaching my friends what I learn. My short-term goals include solidifying knowledge of network devices, getting comfortable with common security tooling, and completing an A+ Certification that can help me in getting a IT job to start. Long-term, I aim to work in applied cybersecurity where I can both defend systems and help design more resilient software. My hobbies — coding, fitness, and research — reinforce each other. I'm excited to present this About Me as part of my portfolio to potential employers and collaborators.</p>
       </div>
     </section>
 
@@ -102,47 +104,47 @@
     </section>
 
     <!-- Blog Article -->
-<article id="blog" class="blog-article">
-  <h2>Image Hover Effects: Techniques and Accessible Practices</h2>
-  <p class="byline">By <strong>Nick Righetti</strong> — December 2025</p>
+    <article id="blog" class="blog-article">
+      <h2>Image Hover Effects: Techniques and Accessible Practices</h2>
+      <p class="byline">By <strong>Nick Righetti</strong> — December 2025</p>
 
-  <section class="article-body">
+      <section class="article-body">
 
-    <p>
-      Image hover effects are a small but powerful tool in a web designer’s kit: they give a page interactivity, provide visual feedback that an element is clickable, and can help highlight details without increasing overall page weight. Common techniques include simple scale and transform animations, opacity changes, slide-in captions, CSS masks or clipping for stylized shapes, and creative use of pseudo-elements. Using the <code>:hover</code> pseudo-class with smooth transitions creates polished motion for users with a fine pointer, but it’s equally important to design these effects responsibly so they work well across devices and accessibility settings. Hover should enhance a page, not determine whether a visitor can access important information.
-    </p>
+        <p>
+          Image hover effects are a small but powerful tool in a web designer's kit: they give a page interactivity, provide visual feedback that an element is clickable, and can help highlight details without increasing overall page weight. Common techniques include simple scale and transform animations, opacity changes, slide-in captions, CSS masks or clipping for stylized shapes, and creative use of pseudo-elements. Using the <code>:hover</code> pseudo-class with smooth transitions creates polished motion for users with a fine pointer, but it's equally important to design these effects responsibly so they work well across devices and accessibility settings. Hover should enhance a page, not determine whether a visitor can access important information.
+        </p>
 
-    <p>
-      For example, <code>:hover</code> triggers when a cursor moves across an element on laptops or desktops, but mobile users rely on touch input. Because touch screens don’t support true hovering, designers should avoid relying exclusively on hover effects to show essential captions, controls, or information. If a hover effect reveals something critical, it should also appear on tap, focus, or by default. This ensures the layout remains functional for everyone who interacts with the site.
-    </p>
+        <p>
+          For example, <code>:hover</code> triggers when a cursor moves across an element on laptops or desktops, but mobile users rely on touch input. Because touch screens don't support true hovering, designers should avoid relying exclusively on hover effects to show essential captions, controls, or information. If a hover effect reveals something critical, it should also appear on tap, focus, or by default. This ensures the layout remains functional for everyone who interacts with the site.
+        </p>
 
-    <p><strong>Example techniques used in this site’s gallery include:</strong></p>
+        <p><strong>Example techniques used in this site's gallery include:</strong></p>
 
-    <p>
-      <strong>Scale + fade:</strong> the image slightly scales up while a subtle box-shadow gives a sense of depth. This is a lightweight way to signal interactivity.
-    </p>
+        <p>
+          <strong>Scale + fade:</strong> the image slightly scales up while a subtle box-shadow gives a sense of depth. This is a lightweight way to signal interactivity.
+        </p>
 
-    <p>
-      <strong>Caption slide:</strong> a caption slides upward from the bottom using <code>transform</code> and <code>opacity</code>. Because the animation relies on transforms, it remains smooth and GPU-accelerated even on low-power devices.
-    </p>
+        <p>
+          <strong>Caption slide:</strong> a caption slides upward from the bottom using <code>transform</code> and <code>opacity</code>. Because the animation relies on transforms, it remains smooth and GPU-accelerated even on low-power devices.
+        </p>
 
-    <p>
-      <strong>Mask / clip effects:</strong> for stylized shapes, <code>mask-image</code> or <code>clip-path</code> allows unique reveals without importing extra graphics. These should be used sparingly, and any text or icons inside the clipped area must maintain strong contrast to remain readable.
-    </p>
+        <p>
+          <strong>Mask / clip effects:</strong> for stylized shapes, <code>mask-image</code> or <code>clip-path</code> allows unique reveals without importing extra graphics. These should be used sparingly, and any text or icons inside the clipped area must maintain strong contrast to remain readable.
+        </p>
 
-    <p>
-      <strong>Accessibility notes:</strong> When building hover animations, it’s a good rule to prefer <code>transform</code> and <code>opacity</code> rather than layout-changing properties such as <code>width</code>, <code>height</code>, or <code>top</code>. Layout changes cause reflow, which is more expensive and may lead to jittery motion on weaker hardware. It’s also important to respect user preferences. Visitors who choose “reduced motion” may experience discomfort or distraction from excessive animation. Using <code>@media (prefers-reduced-motion: reduce)</code> ensures hover effects become static or minimal when required. Additionally, combining <code>@media (hover: hover)</code> and <code>@media (pointer: fine)</code> ensures that effects only appear when a device actually supports them.
-    </p>
+        <p>
+          <strong>Accessibility notes:</strong> When building hover animations, it's a good rule to prefer <code>transform</code> and <code>opacity</code> rather than layout-changing properties such as <code>width</code>, <code>height</code>, or <code>top</code>. Layout changes cause reflow, which is more expensive and may lead to jittery motion on weaker hardware. It's also important to respect user preferences. Visitors who choose "reduced motion" may experience discomfort or distraction from excessive animation. Using <code>@media (prefers-reduced-motion: reduce)</code> ensures hover effects become static or minimal when required. Additionally, combining <code>@media (hover: hover)</code> and <code>@media (pointer: fine)</code> ensures that effects only appear when a device actually supports them.
+        </p>
 
-    <p>
-      <strong>Keyboard accessibility:</strong> Hover should never be the only way to trigger an effect. By making gallery images focusable, keyboard users can tab through content and receive the same highlight used on hover. This keeps behavior consistent across input types.
-    </p>
+        <p>
+          <strong>Keyboard accessibility:</strong> Hover should never be the only way to trigger an effect. By making gallery images focusable, keyboard users can tab through content and receive the same highlight used on hover. This keeps behavior consistent across input types.
+        </p>
 
-    <p>
-      Below is the example CSS snippet used in the project:
-    </p>
+        <p>
+          Below is the example CSS snippet used in the project:
+        </p>
 
-    <pre><code>
+        <pre><code>
 .gallery-item img {
   transition: transform 260ms ease, filter 260ms ease, opacity 260ms ease;
   will-change: transform, opacity;
@@ -156,24 +158,23 @@
 @media (prefers-reduced-motion: reduce) {
   .gallery-item img { transition: none; transform: none; }
 }
-    </code></pre>
+        </code></pre>
 
-    <p>
-      Resources that guided this work include MDN’s documentation on <code>:hover</code> and pseudo-classes, CSS-Tricks’ articles on advanced image effects, and Smashing Magazine’s guide on pointer and hover media queries. These helped shape a modern, accessible approach to hover interactions.
-    </p>
+        <p>
+          Resources that guided this work include MDN's documentation on <code>:hover</code> and pseudo-classes, CSS-Tricks' articles on advanced image effects, and Smashing Magazine's guide on pointer and hover media queries. These helped shape a modern, accessible approach to hover interactions.
+        </p>
 
-  </section>
+      </section>
 
-  <section class="article-refs">
-    <h3>References</h3>
-    <ol>
-      <li>MDN — <em>:hover pseudo-class</em></li>
-      <li>CSS-Tricks — <em>Fancy Image Decorations: Masks and Advanced Hover Effects</em></li>
-      <li>Smashing Magazine — <em>Pointer & Hover Media Queries</em></li>
-    </ol>
-  </section>
-</article>
-
+      <section class="article-refs">
+        <h3>References</h3>
+        <ol>
+          <li>MDN — <em>:hover pseudo-class</em></li>
+          <li>CSS-Tricks — <em>Fancy Image Decorations: Masks and Advanced Hover Effects</em></li>
+          <li>Smashing Magazine — <em>Pointer & Hover Media Queries</em></li>
+        </ol>
+      </section>
+    </article>
 
     <!-- Video -->
     <section id="video">
